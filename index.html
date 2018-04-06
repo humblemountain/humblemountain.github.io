@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="plugins/fitvids/jquery.fitvids.js"></script>
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 	</head>
@@ -29,8 +30,7 @@
       <hr>
       <h1 class="display-4 text-center">We encourage curiosity, adventure, and discovery through immersive educational experiences. Blending video, VR, and lesson plans. Coming this spring!</h1>
       <hr>
-      <div class="fb-video" data-href="https://www.facebook.com/humblemountain/videos/416738508754389/" data-show-text="false"><blockquote cite="https://www.facebook.com/humblemountain/videos/416738508754389/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/humblemountain/videos/416738508754389/">Introducing Humble Mountain</a><p>Introducing Humble Mountain. Follow us as we encourage curiosity, adventure, and discovery through immersive educational experiences. Thanks for launchpad support from the Roger Tory Peterson Institute of Natural History.</p>Posted by <a href="https://www.facebook.com/humblemountain/">Humble Mountain</a> on Wednesday, March 14, 2018</blockquote></div>
-
+        <iframe class="fitvids" src="https://www.youtube.com/embed/OGWLZRQM7kM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <hr>
 
       <!-- Begin MailChimp Signup Form -->
@@ -59,4 +59,12 @@
       <p class="text-align-center"><a href="https://orbitist.com" target="_blank"><img alt="Orbitist Logo" data-entity-type="file" data-entity-uuid="7337f00b-6a51-41df-925b-1cdbda4ad856" height="153" src="https://static1.squarespace.com/static/55a95d75e4b0ca41a09fafe7/t/58025339197aea35e2b1840b/1476547391224/?format=300w" width="153"></a></p>
     </div>
   </body>
+
+  <script>
+    $(document).ready(function(){
+      // Target your .container, .wrapper, .post, etc.
+      $(".fitvids").fitVids();
+    });
+  </script>
+
 </html>
